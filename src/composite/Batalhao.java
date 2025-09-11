@@ -25,4 +25,13 @@ public class Batalhao implements ExercitoComposite {
             component.showDetails();
         }
     }
+
+    @Override
+    public int showPower(int total) {
+        System.out.println("BATALHAO: " + nome);
+        for(ExercitoComposite component : components){
+            total = component.showPower(total);
+        }
+        return total;
+    }
 }
