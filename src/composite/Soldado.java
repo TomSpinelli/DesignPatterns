@@ -17,7 +17,7 @@ public class Soldado implements ExercitoComposite {
 
     @Override
     public int showPower(int total) {
-        System.out.println("SOLDADO: "+ valor);
+        System.out.println("SOLDADO: "+ nome + " poder " + valor);
         return total + valor;
 
     }
