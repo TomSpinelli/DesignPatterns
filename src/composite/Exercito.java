@@ -29,10 +29,10 @@ public class Exercito implements ExercitoComposite {
 
     @Override
     public int showPower(int total) {
-        System.out.println("EXERCITO: " + nome);
         for(ExercitoComposite component : components){
             total = component.showPower(total);
         }
+        System.out.println("calculando EXERCITO: " + nome + "  valor total até agora  " + total);
         return total;
     }
 }

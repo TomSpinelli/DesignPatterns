@@ -31,7 +31,14 @@ public class Main {
         exercito.addComponents(batalhao);
         exercito.addComponents(batalhao2);
         exercito.showDetails();
+        System.out.println();
         exercito.showPower(0);
+        System.out.println();
+        batalhao2.showPower(0);
+        System.out.println();
+        squad1.showPower(0);
+        System.out.println();
+        soldier4.showPower(0);
 
     }
 }

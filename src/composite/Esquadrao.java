@@ -24,10 +24,10 @@ public class Esquadrao implements ExercitoComposite {
 
     @Override
     public int showPower(int total) {
-        System.out.println("ESQUADRAO: " + nome);
         for(ExercitoComposite component : components){
             total = component.showPower(total);
         }
+        System.out.println("calculando ESQUADRAO: " + nome + "  valor total até agora  " + total);
         return total;
     }
 }
